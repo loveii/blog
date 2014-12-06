@@ -1,0 +1,12 @@
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Release\Loveii.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Release\Loveii.pdb
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Release\log4net.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Release\ZC.ResClient.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Release\ZC.ResClient.xml
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\obj\Release\Loveii.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\obj\Release\Loveii.pdb
+D:\mono\Loveii\Loveii\bin\Release\Loveii.dll
+D:\mono\Loveii\Loveii\bin\Release\Loveii.pdb
+D:\mono\Loveii\Loveii\bin\Release\log4net.dll
+D:\mono\Loveii\Loveii\obj\Release\Loveii.dll
+D:\mono\Loveii\Loveii\obj\Release\Loveii.pdb

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E994C4D-3E11-40CB-890F-98F668D2A418}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Loveii</RootNamespace>
+    <AssemblyName>Loveii</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Refer\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionFilter\ValidateLoginFilter.cs" />
+    <Compile Include="Cache\AspNetCache.cs" />
+    <Compile Include="Cache\CacheHelper.cs" />
+    <Compile Include="Cache\ICacheStrategy.cs" />
+    <Compile Include="Components\Enumerate.cs" />
+    <Compile Include="Configuration\GlobalConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Helpers\CaptchaHelper.cs" />
+    <Compile Include="Helpers\CookieHelper.cs" />
+    <Compile Include="Helpers\HtmlExtension.cs" />
+    <Compile Include="Helpers\SecurityHelper.cs" />
+    <Compile Include="Helpers\UtilHelper.cs" />
+    <Compile Include="Helpers\XCaptcha.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Link.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\Term.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CommentRepository.cs" />
+    <Compile Include="Repositories\LinkRepository.cs" />
+    <Compile Include="Repositories\PostsRepository.cs" />
+    <Compile Include="Repositories\CreateRepository.cs" />
+    <Compile Include="Repositories\TermRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Result\IResult.cs" />
+    <Compile Include="Result\ListResult.cs" />
+    <Compile Include="Result\PageResult.cs" />
+    <Compile Include="Result\Result.cs" />
+    <Compile Include="Result\TResult.cs" />
+    <Compile Include="Services\CommentSrv.cs" />
+    <Compile Include="Services\LinkSrv.cs" />
+    <Compile Include="Services\PostsSrv.cs" />
+    <Compile Include="Services\SSO.cs" />
+    <Compile Include="Services\TermSrv.cs" />
+    <Compile Include="Services\UserSrv.cs" />
+    <Compile Include="SQLHelper\DBConnection.cs" />
+    <Compile Include="SQLHelper\GetResource.cs" />
+    <Compile Include="SQLHelper\IDataReaderExt.cs" />
+    <Compile Include="SQLHelper\MySqlContext.cs" />
+    <Compile Include="SQLHelper\MySqlProcedureContext.cs" />
+    <Compile Include="SQLHelper\ProcedureContext.cs" />
+    <Compile Include="SQLHelper\SQLHelper.cs" />
+    <Compile Include="Utils\ClientDataCollection.cs" />
+    <Compile Include="Utils\CryptoHelper.cs" />
+    <Compile Include="Utils\EnumDescription.cs" />
+    <Compile Include="ViewModels\AdminViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\AdminBaseViewModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

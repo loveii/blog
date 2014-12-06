@@ -1,0 +1,493 @@
+/*
+ * Theme Name: iNove
+ * Theme URI: http://wordpress.org/extend/themes/inove/
+ * Description: Inspired by MacZone.sk, created by mg12. It is very stylish, widget supported and doesn’t require any plugin.
+ * Version: 1.4.6
+ * Author: mg12
+ * Author URI: http://www.neoease.com/
+ * Tags: white, light, two-columns, fixed-width, theme-options, right-sidebar
+ * */
+
+/**
+ * Created with Aliyun UED
+ * Description:Aliyun BLOG Style
+ * Author: zhiwen.gzw[zhiwen.gzw#aliyun-inc.com]
+ * Date: 2014-02-11
+ */
+/*========================== Base CSS =========================================*/
+html { color: #000; background: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1;}
+body, button, input, select, textarea { font: 12px/1.5 "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial, "\5B8B\4F53" !important }
+input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0; }
+th { text-align: inherit; }
+fieldset, img { border: 0; }
+iframe { display: block; }
+abbr, acronym { border: 0; font-variant: normal; }
+del { text-decoration: line-through; }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: 500; }
+.loveii-header ol li, .loveii-header ul li, .loveii-comment ol li, .loveii-comment ul li, .loveii-sidebar ol li, .loveii-sidebar ul li { list-style: none; }
+.loveii-article ol li, .loveii-article ul li { list-style-position: inside; margin: 0; padding: 2px 0 2px 15px; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+q:before, q:after { content: ''; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+a:hover { text-decoration: underline; }
+ins, a { text-decoration: none; }
+.fn-clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.fn-clear { zoom: 1;}
+.fn-left, .fn-right { display: inline; }
+.fn-left { float: left; }
+.fn-right { float: right; }
+
+/*========================== Common CSS =========================================*/
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #7ed1e8;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #7ed1e8;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #7ed1e8;
+}
+.fc-red{
+  color: #df3114;
+}
+.loveii-sidebar a,
+.loveii-page a{
+  color: #00a2ca;
+}
+.loveii-paging{
+  padding: 70px 0 30px;
+  text-align: right;
+}
+.loveii-paging a,
+.loveii-paging span{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  background: #FFF;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+margin: 0 5px;
+}
+.loveii-paging a:hover,
+.loveii-paging a.current{
+  border: 1px solid #00a2ca;
+  background: #00a2ca;
+  color: #FFF;
+  text-decoration: none;
+}
+.loveii-paging span{
+  color: #cccccc;
+  border: 1px solid #efefef;
+  background: #efefef;
+}
+/*header*/
+.loveii-inner-w{
+  width: 1000px;
+  margin: 0 auto;
+}
+.loveii-header{
+  height: 74px;
+  border-top: 1px solid #008fb5;
+  background: #00a2ca;
+  margin-bottom: 15px;
+}
+
+.loveii-logo{
+  float: left;
+  width: 112px;
+  height: 38px;
+  margin: 18px 0;
+  background: url("img/loveii-logo.png");
+}
+.loveii-search{
+  float: right;
+  display: inline;
+  margin: 22px 0 0 5px;
+  width: 192px;
+  height: 31px;
+  background: #008ab0;
+  border-radius: 4px;
+}
+.loveii-search .btn{
+  float: right;
+  display: inline;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 7px 7px 0 0;
+  background: url("img/loveii-ico-search.png");
+}
+.loveii-search .input{
+  width: 150px;
+  height: 20px;
+  border: none;
+  margin: 5px 0 0 5px;
+  background: none;
+  color: #7ed1e8;
+}
+.loveii-nav-wraper{
+float: left;
+width: 675px;
+overflow: hidden;
+}
+.loveii-nav{
+  float: left;
+  height: 32px;
+  padding: 21px 0 0 0;
+}
+.loveii-nav li{
+  float: left;
+}
+.loveii-nav li a{
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #FFF;
+  text-shadow: 0 0 1px #000;
+  text-decoration: none;
+}
+.loveii-nav li a.current{
+  background: #0094bd;
+  border-radius: 4px;
+}
+/*footer*/
+.loveii-footer{
+  width: 1200px;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #e5e5e5;
+  padding: 35px 0 40px;
+}
+.loveii-footer p{
+  padding: 5px 0;
+}
+.loveii-footer a{
+  padding: 0 5px;
+  color: #B3B3B3;
+}
+.loveii-footer p.big a{
+  color: #666;
+  font-size: 14px;
+}
+
+/*sidebar*/
+.loveii-sidebar{
+  float: right;
+  display: inline;
+  width: 304px;
+  margin-left: 36px;
+  line-height: 22px;
+  color: #333333;
+}
+.loveii-sidebar-title{
+  font-size: 16px;
+  color: #666666;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.loveii-sidebar .widget{
+ padding:10px 0;
+}
+.loveii-sidebar .widget h2{
+  font-size: 16px;
+  color: #666666;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/*page*/
+.loveii-page{
+  float: left;
+  width: 660px;
+  line-height: 22px;
+  color: #666;
+  overflow: hidden;
+}
+.loveii-article-list{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+}
+.loveii-article-header {
+  margin:25px 0 15px;
+}
+.loveii-article-header .tag,
+.loveii-article-header .title{
+  float: left;
+}
+.loveii-article-header .title{
+  width: 500px;
+  font-size: 22px;
+  height: 30px;
+  line-height: 30px;
+  color: #333333;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.loveii-article-header .title a{
+  color: #333333;
+}
+.loveii-article-header .tag{
+  height: 23px;
+  line-height: 23px;
+  padding:0 10px 0 5px;
+  margin: 3px 3px 0 0;
+  color: #FFF;
+  background: url("img/loveii-ico-tag.png") right 0 no-repeat;
+}
+.loveii-article-header .info{
+  color: #666666;
+}
+.loveii-article-next{
+  padding: 10px 0;
+  margin: 36px 0;
+  line-height: 22px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.loveii-article-next a{
+  font-size: 14px;
+  color: #333333;
+}
+
+
+/*search*/
+.loveii-search-keyword,
+.loveii-search-null{
+  font-size: 16px;
+  color: #666666;
+  padding: 25px 0 30px;
+}
+.loveii-search-keyword span{
+  color: #ff6600;
+}
+.loveii-search-list{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+}
+.loveii-search-list .loveii-article-header .title{
+  font-size: 16px;
+}
+.loveii-search-list .loveii-article-con{
+  font-size: 14px;
+}
+.loveii-search-list .date,
+.loveii-search-list .comment,
+.loveii-search-list .edit{
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  background-position:0 0;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: #666;
+}
+.loveii-search-list .date{
+  background-image: url("img/loveii-ico-clock.png");
+}
+.loveii-search-list .comment{
+  background-image: url("img/loveii-ico-comment.png");
+}
+.loveii-search-list .edit{
+  background-image: url("img/loveii-ico-edit.png");
+}
+.loveii-search-input .input{
+float: left;
+  width: 460px;
+height: 18px;
+  border-radius: 2px;
+  padding: 8px 10px;
+  border: 1px solid #e6e6e6;
+}
+.loveii-search-input .submit{
+float: left;
+width: 83px;
+height: 36px;
+line-height: 36px;
+background: #00A2C9;
+color: #FFF;
+cursor: pointer;
+border: none;
+border-radius: 0 4px 4px 0;
+}
+/*404*/
+.site-notfound{
+  width:320px;
+  overflow:hidden;
+  padding-top:328px;
+  margin:0px auto 60px;
+  text-align:center;
+  line-height:32px;
+  background:#FFF url("img/loveii-404.png") center top no-repeat;
+}
+.site-notfound a.homelink{
+  color:#666;
+  text-decoration:underline;
+}
+/*comment*/
+.loveii-comment{
+  margin-top: 40px;
+}
+.loveii-comment-title{
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0;
+  border-bottom: 1px solid #dddddd;
+ margin-bottom: 10px;
+}
+
+.loveii-comment-title .comment-total{
+  float: left;
+  height: 23px;
+  padding: 0 5px;
+  line-height: 23px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background:#f4f4f4;
+}
+.loveii-comment-title a{
+  color: #999999;
+}
+.loveii-comment-title a.current{
+  color: #df3114;
+}
+.loveii-comment-list a{
+  color: #999999;
+}
+.loveii-comment-list li{
+  padding: 10px 10px 10px 70px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+.loveii-comment-list li .img{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.loveii-comment-list .comment,
+.loveii-comment-list .support,
+.loveii-comment-list .transpond{
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  background-position:0 0;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: #666;
+}
+.loveii-comment-list .comment{
+  background-image: url("img/loveii-ico-comment2.png");
+}
+.loveii-comment-list .support{
+  background-image: url("img/loveii-ico-support.png");
+}
+.loveii-comment-list .transpond{
+  background-image: url("img/loveii-ico-transpond.png");
+}
+.comment-list li{
+  padding: 0px;
+  position: relative;
+}
+
+.comment-list .comment-body{
+  border-bottom: 1px solid #dddddd;
+}
+.loveii-comment-submit{
+  padding: 10px 0 10px 70px;
+  position: relative;
+}
+.loveii-comment-submit .img{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.loveii-comment-submit .img img,
+.loveii-comment-list li .img img{
+  width:50px;
+  height:50px;
+border-radius: 3px;
+box-shadow: 1px 1px 2px #DCDCDC;
+}
+.loveii-comment-submit .input{
+  width: 568px;
+  height: 60px;
+  border-radius: 2px;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+}
+.loveii-comment-submit .submit{
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background:#00a2c9;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+/*respond*/
+.loveii-respond{
+  padding: 40px 0;
+  color: #333333;
+}
+.loveii-respond .respond-title{
+
+}
+.loveii-respond .respond-title h3{
+  font-size: 14px;
+}
+.loveii-respond .respond-title p{
+  padding: 20px 0;
+}
+.loveii-respond .respond-con li{
+  padding: 5px 0 10px;
+}
+.loveii-respond .respond-con label{
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.loveii-respond .respond-con .input{
+  width: 460px;
+  height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  border: 1px solid #e6e6e6;
+  margin-top: 5px;
+}
+.loveii-respond .respond-con .submit{
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background:#00a2c9;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+/*========================== Module CSS =========================================*/
+

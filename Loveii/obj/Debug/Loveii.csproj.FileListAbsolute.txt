@@ -1,0 +1,7 @@
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Debug\Loveii.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Debug\Loveii.pdb
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\obj\Debug\Loveii.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\obj\Debug\Loveii.pdb
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Debug\log4net.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Debug\ZC.ResClient.dll
+C:\Users\ChengLiu\Desktop\mono\Loveii\Loveii\bin\Debug\ZC.ResClient.xml

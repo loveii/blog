@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loveii", "Loveii\Loveii.csproj", "{8E994C4D-3E11-40CB-890F-98F668D2A418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loveii.Web", "Loveii.Web\Loveii.Web.csproj", "{961438D3-0F8E-4D78-BEC5-B4874C93FB83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E994C4D-3E11-40CB-890F-98F668D2A418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E994C4D-3E11-40CB-890F-98F668D2A418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E994C4D-3E11-40CB-890F-98F668D2A418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E994C4D-3E11-40CB-890F-98F668D2A418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961438D3-0F8E-4D78-BEC5-B4874C93FB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961438D3-0F8E-4D78-BEC5-B4874C93FB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961438D3-0F8E-4D78-BEC5-B4874C93FB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961438D3-0F8E-4D78-BEC5-B4874C93FB83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
